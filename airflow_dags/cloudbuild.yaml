@@ -1,3 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'rsync', '-r', 'dags', 'gs://us-central1-composer-trial-29abe166-bucket/dags']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
